@@ -1,5 +1,7 @@
 package cat.flm;
 
+import cat.flm.models.Apple;
+
 public class Field {
     Apple a1 = new Apple();
     Apple a2 = new Apple();

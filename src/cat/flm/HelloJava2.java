@@ -1,6 +1,7 @@
 package cat.flm;
 
-import javax.swing.*;
+import javax.swing.JFrame;
+import javax.swing.JComponent;
 import java.awt.*;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseMotionListener;

@@ -1,9 +1,10 @@
-package cat.flm;
+package cat.flm.models;
 
 public class Apple {
-    float mass;
+    public float mass;
     private float diameter;
-    int x, y;
+    public int x;
+    public int y;
     public  static final float gravAccel = 9.8f;
     static final int SMALL = 0, MEDIUM = 1, LARGE = 2;
 
@@ -37,10 +38,6 @@ public class Apple {
         double xdiff = x - other.x;
         double ydiff = y - other.y;
         double distance = Math.sqrt(xdiff * xdiff + ydiff * ydiff);
-        if (distance < diameter / 2 + other.diameter / 2) {
-            return true;
-        } else {
-            return false;
-        }
+        return distance < diameter / 2 + other.diameter / 2;
     }
 }
